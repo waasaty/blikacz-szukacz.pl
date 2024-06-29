@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wesprzyj nas - blikacz-szukacz.pl</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      background: linear-gradient(0deg, rgba(52, 52, 52, 1) 0%, rgba(0, 0, 0, 1) 100%);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    nav {
+      position: fixed;
+      top: 0.5vw;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 0.5vw;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .support-us {
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .support-us h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .support-us p {
+      color: white;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .donate-button {
+      background-color: transparent;
+      color: white;
+      padding: 15px 30px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 0.4rem;
+      cursor: pointer;
+      transition: all .3s;
+      text-decoration: none;
+    }
+
+    .donate-button:hover {
+      background-color: rgba(52, 52, 52, .5);
+      border: 1px solid white;
+    }
+
+    @media (max-width: 780px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Wyszukiwarka</a></li>
+      <li><a href="domainlist.html">Lista domen</a></li>
+      <li><a target="_blank" href="https://discord.gg/NmKtq8GDCx">Discord</a></li>
+      <li><a href="donate.html">Wesprzyj nas</a></li>
+    </ul>
+  </nav>
+  <!-- NAV BAR END -->
+
+  <!-- SUPPORT US -->
+  <div class="support-us">
+    <h2>Wesprzyj nasz projekt!</h2>
+    <p>Wysoko ceniąc Twoje wsparcie, chcielibyśmy kontynuować rozwój naszego projektu. Każda wpłata pomoże nam rozszerzać funkcjonalności i zapewnić lepsze doświadczenia użytkownikom.</p>
+    <a target="_blank" href="https://paypal.me/wasaty22" class="donate-button">Wesprzyj nas</a>
+  </div>
+  <!-- SUPPORT US END -->
+
+    <!-- footer -->
+    <div style="position: fixed; bottom: .1vw;" class="footer">
+        <p style="color: white;">Created with ❤️ by <a style="color: white; text-decoration: none;" href="https://github.com/waasaty">coutstd</a></p>
+    </div>
+    <!-- footer end -->
+</body>
+</html>
